@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Recetas — SinGlut & Lact</title>
+
+  <!-- Favicon y fuentes -->
+  <link rel="icon" href="logo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+
+  <header class="site-header">
+    <div class="container header-wrap">
+      <a class="brand" href="index.html" aria-label="Ir al inicio">
+        <img src="logo.png" alt="Logotipo SinGlut & Lact">
+        <span class="brand-name">SinGlut &amp; Lact</span>
+      </a>
+      <nav aria-label="Navegación principal">
+        <ul class="menu">
+          <li><a href="index.html">🏠 Inicio</a></li>
+          <li><a href="recetas.html" aria-current="page">🍽️ Recetas</a></li>
+          <li><a href="contacto.html">✉️ Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container recetas">
+    <header class="page-header">
+      <h1>Recetas</h1>
+      <form class="filtros" action="#" method="get" role="search">
+        <label for="q">Buscar</label>
+        <input id="q" name="q" type="search" placeholder="buscar...">
+        <fieldset>
+          <legend>Tipo</legend>
+          <label><input type="checkbox" value="desayuno"> Desayuno</label>
+          <label><input type="checkbox" value="comida"> Comida</label>
+          <label><input type="checkbox" value="cena"> Cena</label>
+        </fieldset>
+        <button class="btn" type="submit">Filtrar</button>
+      </form>
+    </header>
+
+    <section class="grid-recetas" aria-label="Tarjetas de recetas">
+      <article class="card receta">
+        <figure>
+          <img
+            src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmiatabey.com%2Fwp-content%2Fuploads%2F2016%2F03%2FIMG_5467-800x800.jpg&f=1&nofb=1"
+            alt="Pancakes de avena sin gluten">
+          <figcaption>
+            Foto: fuente web. <a href="https://miatabey.com/" target="_blank" rel="noopener">ver origen</a>
+          </figcaption>
+        </figure>
+        <h2>Pancakes de avena</h2>
+        <p>Avena certificada sin gluten, plátano y bebida vegetal. Suaves y rápidas.</p>
+        <a class="btn btn-secondary" href="#">Ver receta</a>
+      </article>
+
+      <article class="card receta">
+        <figure>
+          <img
+            src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F1.bp.blogspot.com%2F-_jbP-WOWgg0%2FT2-O3aBVOpI%2FAAAAAAAAA9s%2FHYGeMOIGfBI%2Fs1600%2FCrema%2Bde%2BCalabaza%25252C%2BColiflor%2By%2BZanahoria%2B%25252818%252529.JPG&f=1&nofb=1"
+            alt="Crema de calabaza sin lácteos">
+          <figcaption>
+            Foto: fuente web. <a href="https://blogspot.com" target="_blank" rel="noopener">ver origen</a>
+          </figcaption>
+        </figure>
+        <h2>Crema de calabaza</h2>
+        <p>Suave y ligera, sin lácteos; perfecta con pipas tostadas por encima.</p>
+        <a class="btn btn-secondary" href="#">Ver receta</a>
+      </article>
+
+      <article class="card receta">
+        <figure>
+          <img
+            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgPTDI-crrh7xGS1jzAcsgmlRfmFxZ6KZX58vETWPHby11hb5shi97jTZvcXlsEpLSIfbCuPA_CfZDwZJqkai0vcmcWwmBlYfV-PJMZD63vK90iXmiQVDXGxNFS9KR-v9PipKwUljdF_qk/s1600/20200402_143810.jpg"
+            alt="Pollo al horno con hierbas">
+          <figcaption>
+            Foto: fuente web. <a href="https://blogger.googleusercontent.com" target="_blank" rel="noopener">ver origen</a>
+          </figcaption>
+        </figure>
+        <h2>Pollo al horno</h2>
+        <p>Marinado cítrico con hierbas; dorado por fuera y jugoso por dentro.</p>
+        <a class="btn btn-secondary" href="#">Ver receta</a>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <section><h3>Sobre</h3><p>Proyecto de prácticas M04.</p></section>
+      <section><h3>Créditos</h3><p>Imágenes enlazadas a la fuente.</p></section>
+      <section><h3>Redes</h3>
+        <ul class="social">
+          <li><a href="#" aria-label="Instagram">Instagram</a></li>
+          <li><a href="#" aria-label="YouTube">YouTube</a></li>
+          <li><a href="#" aria-label="TikTok">TikTok</a></li>
+        </ul>
+      </section>
+    </div>
+    <p class="legal">© 2025</p>
+  </footer>
+
+</body>
+</html>
+

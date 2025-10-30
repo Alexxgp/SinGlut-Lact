@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contacto — SinGlut & Lact</title>
+
+  <link rel="icon" href="logo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Accesibilidad -->
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+
+  <header class="site-header">
+    <div class="container header-wrap">
+      <a class="brand" href="index.html" aria-label="Ir al inicio">
+        <img src="logo.png" alt="Logotipo SinGlut & Lact">
+        <span class="brand-name">SinGlut &amp; Lact</span>
+      </a>
+      <nav aria-label="Navegación principal">
+        <ul class="menu">
+          <li><a href="index.html">🏠 Inicio</a></li>
+          <li><a href="recetas.html">🍽️ Recetas</a></li>
+          <li><a href="contacto.html" aria-current="page">✉️ Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container contacto">
+    <header class="page-header">
+      <h1>Contacto</h1>
+      <p>¿Ideas o sugerencias? Escríbenos.</p>
+    </header>
+
+    <section class="grid-contacto" aria-label="Formulario y mapa">
+      <form class="form" action="#" method="post">
+        <label for="nombre">Nombre</label>
+        <input id="nombre" name="nombre" type="text" required>
+
+        <label for="correo">Correo</label>
+        <input id="correo" name="correo" type="email" required>
+
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" rows="6" required></textarea>
+
+        <button class="btn btn-primary" type="submit">Enviar</button>
+      </form>
+
+      <div class="mapa-placeholder" role="img" aria-label="Mapa de ejemplo"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <section><h3>Sobre</h3><p>Proyecto de prácticas M04.</p></section>
+      <section><h3>Créditos</h3><p>Imágenes de ejemplo del alumno.</p></section>
+      <section><h3>Redes</h3>
+        <ul class="social">
+          <li><a href="#" aria-label="Instagram">Instagram</a></li>
+          <li><a href="#" aria-label="YouTube">YouTube</a></li>
+          <li><a href="#" aria-label="TikTok">TikTok</a></li>
+        </ul>
+      </section>
+    </div>
+    <p class="legal">© 2025</p>
+  </footer>
+
+</body>
+</html>

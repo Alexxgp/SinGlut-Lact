@@ -1,0 +1,162 @@
+/* ===== Variables de paleta ===== */
+:root{
+  --teal: #009688;
+  --orange: #FF9800;
+  --text: #1f2937;
+}
+
+/* ===== Base y convenciones ===== */
+*{ box-sizing: border-box; }
+body{
+  margin: 0;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  color: var(--text);
+  background: #fafafa;
+  font-size: 16px;
+  line-height: 1.6;
+}
+img{ max-width: 100%; display: block; }
+.container{ max-width: 1100px; margin: 0 auto; padding: 0 16px; } /* margen a borde 16px */
+main > section{ margin-bottom: 24px; } /* separación mínima entre bloques */
+
+/* Saltar al contenido (accesibilidad) */
+.skip-link{
+  position: absolute; left: -9999px; top: auto; width: 1px; height: 1px; overflow: hidden;
+}
+.skip-link:focus{
+  position: static; width: auto; height: auto; padding: 8px 12px;
+  background: #111; color: #fff; border-radius: 8px; margin: 8px;
+}
+
+/* Títulos */
+h1,h2,h3{
+  font-family: "Montserrat", "Roboto", Arial, sans-serif;
+  letter-spacing: .2px;
+  margin: 0 0 8px;
+}
+h1{ font-weight: 700; font-size: clamp(28px, 6vw, 56px); }
+h2{ font-weight: 600; font-size: clamp(22px, 3.5vw, 40px); }
+p { font-size: clamp(16px, 2.4vw, 18px); }
+
+/* Focus visible */
+:focus-visible{ outline: 3px solid var(--orange); outline-offset: 2px; }
+
+/* ===== Header y nav ===== */
+.site-header{ background: #fff; border-bottom: 1px solid #e5e7eb; }
+
+/* Logo más grande y responsive */
+.header-wrap{
+  min-height: 72px; /* <-- correcto para el validador */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.brand{
+  display: inline-flex; align-items: center; gap: 10px;
+  padding: 4px 8px; border-radius: 12px; text-decoration: none;
+}
+.brand:hover{ background: #f3f4f6; }
+.brand img{ height: clamp(36px, 4.2vw, 48px); width: auto; }
+.brand-name{
+  font-family: "Montserrat","Roboto",sans-serif;
+  font-weight: 700;
+  font-size: clamp(18px, 2.6vw, 24px);
+  color: var(--text);
+}
+
+.menu{ list-style: none; display: flex; gap: 24px; margin: 0; padding: 0; }
+.menu a{ text-decoration: none; color: var(--text); padding: 8px 12px; border-radius: 999px; }
+.menu a:hover{ background: #f3f4f6; }
+/* enlace activo */
+.menu a[aria-current="page"]{ background: #e6f4f1; color: var(--teal); font-weight: 600; }
+
+/* ===== Hero (Fondo 1: gradiente) ===== */
+.hero{
+  background: linear-gradient(135deg, var(--teal), var(--orange));
+  color: #fff; text-align: center; padding: 60px 0;
+}
+.hero p{ margin: 0 0 16px; }
+
+/* ===== Botones (≥48×48 + transición) ===== */
+.btn{
+  display: inline-block;
+  min-height: 48px; min-width: 48px;
+  padding: 12px 20px;
+  border-radius: 999px; border: 0;
+  cursor: pointer; text-decoration: none;
+  transition: transform .15s ease, box-shadow .2s ease, filter .2s ease;
+}
+.btn-primary{ background: #fff; color: var(--teal); }
+.btn-primary:hover{ transform: translateY(-2px); box-shadow: 0 10px 24px rgba(0,0,0,.12); }
+.btn-secondary{ background: var(--orange); color: #111827; }
+.btn-secondary:hover{ filter: brightness(1.06); transform: translateY(-2px); }
+
+/* ===== Features ===== */
+.features{ display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; padding: 32px 0; }
+.card{
+  background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 16px;
+  transition: transform .15s ease, box-shadow .2s ease;
+}
+.card:hover{ transform: translateY(-2px); box-shadow: 0 10px 24px rgba(0,0,0,.12); }
+
+/* ===== CTA newsletter ===== */
+.cta{ padding: 32px 0; text-align: center; }
+.newsletter{
+  max-width: 720px; margin: 16px auto 0;
+  display: grid; grid-template-columns: 1fr auto; gap: 16px;
+}
+/* Ocultar visualmente la etiqueta (reemplaza clip: rect) */
+.newsletter label{
+  position: absolute;
+  width: 1px; height: 1px;
+  margin: -1px; padding: 0;
+  overflow: hidden; white-space: nowrap;
+  clip-path: inset(50%);
+  border: 0;
+}
+.newsletter input{ padding: 12px 14px; border: 1px solid #d1d5db; border-radius: 10px; }
+
+/* ===== Recetas ===== */
+.page-header{ margin-top: 24px; }
+.filtros{ display: grid; grid-template-columns: 1fr auto; gap: 16px; align-items: end; margin: 16px 0 24px; }
+.filtros fieldset{ border: 1px solid #e5e7eb; border-radius: 10px; padding: 8px 12px; display: flex; gap: 12px; flex-wrap: wrap; }
+.grid-recetas{ display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; padding-bottom: 32px; }
+.receta figure{ margin: 0 0 8px; }
+/* Miniaturas consistentes 16:9 */
+.receta img{
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.receta figcaption{ font-size: 12px; color: #6b7280; }
+
+/* ===== Contacto ===== */
+.grid-contacto{ display: grid; grid-template-columns: 1fr 1fr; gap: 24px; padding-bottom: 32px; }
+.form label{ display: block; margin: 8px 0 4px; font-weight: 600; }
+.form input, .form textarea{ width: 100%; padding: 12px 14px; border: 1px solid #d1d5db; border-radius: 10px; }
+.mapa-placeholder{ width: 100%; height: 280px; border: 1px dashed #d1d5db; border-radius: 12px; background: #fff; }
+
+/* ===== Footer (Fondo 2: gradiente) ===== */
+.site-footer{
+  background: linear-gradient(180deg, #ffffff, #f5f7f9);
+  border-top: 1px solid #e5e7eb; margin-top: 32px;
+}
+.footer-grid{ display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; padding: 24px 0; }
+.site-footer h3{ margin-top: 0; }
+.social{ list-style: none; padding: 0; margin: 0; display: flex; gap: 12px; }
+.legal{ text-align: center; color: #6b7280; padding: 12px; margin: 0; border-top: 1px dashed #e5e7eb; }
+
+/* ===== Responsive ===== */
+@media (max-width: 900px){
+  .features{ grid-template-columns: 1fr 1fr; }
+  .grid-recetas{ grid-template-columns: 1fr 1fr; }
+  .grid-contacto{ grid-template-columns: 1fr; }
+  .footer-grid{ grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 640px){
+  .features, .grid-recetas, .footer-grid{ grid-template-columns: 1fr; }
+  .newsletter{ grid-template-columns: 1fr; }
+}

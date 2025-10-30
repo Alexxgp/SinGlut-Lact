@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inicio — SinGlut & Lact</title>
+
+  <link rel="icon" href="logo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Accesibilidad -->
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+
+  <header class="site-header">
+    <div class="container header-wrap">
+      <a class="brand" href="index.html" aria-label="Ir al inicio">
+        <img src="logo.png" alt="Logotipo SinGlut & Lact">
+        <span class="brand-name">SinGlut &amp; Lact</span>
+      </a>
+      <nav aria-label="Navegación principal">
+        <ul class="menu">
+          <li><a href="index.html" aria-current="page">🏠 Inicio</a></li>
+          <li><a href="recetas.html">🍽️ Recetas</a></li>
+          <li><a href="contacto.html">✉️ Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-label="Portada">
+      <div class="container">
+        <h1>Recetas y estilo de vida sin gluten y sin lactosa</h1>
+        <p>Ideas rápidas, económicas y saludables para tu día a día.</p>
+        <a class="btn btn-primary" href="recetas.html">Ver recetas</a>
+      </div>
+    </section>
+
+    <section class="container features" aria-label="Ventajas">
+      <article class="card">
+        <h2>Fáciles</h2>
+        <p>Pocos pasos y sin complicaciones.</p>
+      </article>
+      <article class="card">
+        <h2>Saludables</h2>
+        <p>Ingredientes reales y digestivos.</p>
+      </article>
+      <article class="card">
+        <h2>Económicas</h2>
+        <p>Cuida el bolsillo sin perder sabor.</p>
+      </article>
+    </section>
+
+    <section class="container cta" aria-label="Suscripción">
+      <h2>¿Te las envío?</h2>
+      <form class="newsletter" action="#" method="post">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="tu@email.com" required>
+        <button class="btn" type="submit">Recibir recetas</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <section><h3>Sobre</h3><p>Proyecto de prácticas M04.</p></section>
+      <section><h3>Créditos</h3><p>Imágenes de ejemplo del alumno.</p></section>
+      <section><h3>Redes</h3>
+        <ul class="social">
+          <li><a href="#" aria-label="Instagram">Instagram</a></li>
+          <li><a href="#" aria-label="YouTube">YouTube</a></li>
+          <li><a href="#" aria-label="TikTok">TikTok</a></li>
+        </ul>
+      </section>
+    </div>
+    <p class="legal">© 2025</p>
+  </footer>
+
+</body>
+</html>
