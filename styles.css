@@ -146,7 +146,21 @@ p { font-size: clamp(16px, 2.4vw, 18px); }
 }
 .footer-grid{ display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; padding: 24px 0; }
 .site-footer h3{ margin-top: 0; }
-.social{ list-style: none; padding: 0; margin: 0; display: flex; gap: 12px; }
+.social{ list-style: none; padding: 0; margin: 0; display: flex; gap: 12px; flex-wrap: wrap; }
+.social-link{
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border-radius: 999px;
+  text-decoration: none;
+  border: 1px solid #e5e7eb;
+  background: #fff;
+  color: var(--text);
+}
+.social-link:hover{
+  background: #f3f4f6;
+}
 .legal{ text-align: center; color: #6b7280; padding: 12px; margin: 0; border-top: 1px dashed #e5e7eb; }
 
 /* ===== Responsive ===== */
