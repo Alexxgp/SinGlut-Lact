@@ -174,3 +174,18 @@ p { font-size: clamp(16px, 2.4vw, 18px); }
   .features, .grid-recetas, .footer-grid{ grid-template-columns: 1fr; }
   .newsletter{ grid-template-columns: 1fr; }
 }
+body.dark{
+  background: #0f172a;
+  color: #e5e7eb;
+}
+
+body.dark .site-header{ background: #111827; border-bottom-color: #1f2937; }
+body.dark .brand-name{ color: #e5e7eb; }
+body.dark .menu a{ color: #e5e7eb; }
+body.dark .card{ background: #111827; border-color: #1f2937; }
+body.dark .site-footer{ background: linear-gradient(180deg, #111827, #0b1220); border-top-color: #1f2937; }
+body.dark .menu a:hover{ background: #1f2937; }
+body.dark .menu a[aria-current="page"]{ background: #064e45; color: #7fe7d8; }
+body.dark .card:hover{ box-shadow: 0 10px 24px rgba(0,0,0,.36); }
+body.dark .newsletter input{ background: #1f2937; border-color: #374151; color: #e5e7eb; }
+body.dark .form input, body.dark .form textarea, body.dark .form select{ background: #1f2937; border-color: #374151; color: #e5e7eb; }
