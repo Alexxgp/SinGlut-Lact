@@ -136,7 +136,7 @@ p { font-size: clamp(16px, 2.4vw, 18px); }
 /* ===== Contacto ===== */
 .grid-contacto{ display: grid; grid-template-columns: 1fr 1fr; gap: 24px; padding-bottom: 32px; }
 .form label{ display: block; margin: 8px 0 4px; font-weight: 600; }
-.form input, .form textarea{ width: 100%; padding: 12px 14px; border: 1px solid #d1d5db; border-radius: 10px; }
+.form input, .form textarea, .form select{ width: 100%; padding: 12px 14px; border: 1px solid #d1d5db; border-radius: 10px; }
 .mapa-placeholder{ width: 100%; height: 280px; border: 1px dashed #d1d5db; border-radius: 12px; background: #fff; }
 
 /* ===== Footer (Fondo 2: gradiente) ===== */
